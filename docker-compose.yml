@@ -2,7 +2,7 @@ version: '3'
 services:
   pen-server:
     build: .
-    image: segware/pentaho_server:8.3
+    image: segware/pentaho_server:9.0
     container_name: pentaho-server
     networks:
       - rede_pentaho

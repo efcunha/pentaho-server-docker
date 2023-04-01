@@ -1,11 +1,11 @@
 FROM openjdk:8
 
 MAINTAINER sre@segware.com
-LABEL Pentaho='Server 8.3 com drivers MySQL/Postgres/MongoDB/MSSQL'
+LABEL Pentaho='Server 9.0 com drivers MySQL/Postgres/MongoDB/MSSQL'
 
 # Init ENV
-ENV BISERVER_VERSION 8.3
-ENV BISERVER_TAG 8.3.0.0-371
+ENV BISERVER_VERSION 9.0
+ENV BISERVER_TAG 9.0.0.0-423
 ENV PENTAHO_HOME /opt/pentaho
 
 # Apply JAVA_HOME

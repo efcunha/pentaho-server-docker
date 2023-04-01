@@ -2,7 +2,7 @@
 
 1- Enviar para o servidor HML/PRD o pacote "pentaho-server-docker" (pasta com dockerfile, docker-compose, lib, data)
 
-2- Criar imagem (build) do pentaho server 8 baseado no dockerfile (comando: docker-compose build)
+2- Criar imagem (build) do pentaho server 9 baseado no dockerfile (comando: docker-compose build)
 
    Caso o servidor HML/PRD não tenha acesso a internet, não será possível criar a imagem, então realizar etapas adicionais antes de rodar:
    - Gerar imagem em máquina que possui acesso a internet e realizar a exportação da imagem (docker save) para um arquivo .tar
@@ -39,7 +39,7 @@ _**Obs. também é possível:**_
 >  - docker-compose build or docker-compose up --build
 
 ### build (cria imagem)
-docker build -t segware/pentaho_server:8.3 .
+docker build -t segware/pentaho_server:9.0 .
 
 **_Usando compose:_** 
 > docker-compose build
@@ -52,7 +52,7 @@ docker build -t segware/pentaho_server:8.3 .
 >  - docker logs --follow (container_id)
 
 ### run primeira vez (cria container)
-> docker run -p 127.0.0.1:8081:8080 segware/pentaho_server:8.3 
+> docker run -p 127.0.0.1:8081:8080 segware/pentaho_server:9.0 
 
 **_Usando compose:_** 
 > docker-compose up
