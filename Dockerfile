@@ -34,6 +34,6 @@ RUN chmod 777 -R /opt/pentaho/pentaho-server/tomcat/logs/
 
 EXPOSE 8080 8009
 
-COPY run_pentaho_server.sh /usr/local/bin
+COPY ./scripts/run_pentaho_server.sh /usr/local/bin
 RUN chmod +x /usr/local/bin/run_pentaho_server.sh
 CMD /usr/local/bin/run_pentaho_server.sh
